@@ -35,5 +35,5 @@ history | tail -n 20
 find / -name "backup"
 
 # 12. Replace every occurrence of "foo" with "bar" in "example.txt" and save to "new_example.txt"
-sed 's/foo/bar/g' example.txt > new_example.txt
+sed replace foo bar example.txt > new_example.txt
 
