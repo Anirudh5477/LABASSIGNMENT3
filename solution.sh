@@ -11,7 +11,7 @@ hostname -I
 cat readme.txt
 
 # 4. Count the number of lines in "data.csv"
-ws -l data.csv
+cat data.csv | ws -l 
 
 # 5. Find all files containing the word "error" in the "logs" folder
 grep -rl error logs/
@@ -30,7 +30,6 @@ grep "TODO" *.py
 history | tail -n 20
 
 # 10. Show processes sorted by memory usage
-ps --sort=+mem
 
 # 11. Find all directories named "backup" anywhere on the system
 find / -name "backup"
