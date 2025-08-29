@@ -11,7 +11,7 @@ hostname -I
 cat readme.txt
 
 # 4. Count the number of lines in "data.csv"
-cat data.csv | ws -l 
+ws -l <data.csv 
 
 # 5. Find all files containing the word "error" in the "logs" folder
 grep -rl error logs/
@@ -32,7 +32,7 @@ history | tail -n 20
 # 10. Show processes sorted by memory usage
 
 # 11. Find all directories named "backup" anywhere on the system
-find / -name "backup"
+find / -type d -name "backup"
 
 # 12. Replace every occurrence of "foo" with "bar" in "example.txt" and save to "new_example.txt"
 sed 's/foo/bar/g' example.txt > new_example.txt
